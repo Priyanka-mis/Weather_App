@@ -106,41 +106,34 @@ body{
     padding: 1.5rem;
 }
 
-.content-section form{
+.content-section form { 
+    align-items: center; 
     padding: 1.5rem;
-    position: relative;
-
 }
 
-.content-section form input{
-    width: 84%;
+.content-section form input {
+    width: 70%; 
     outline: none;
     background: transparent;
     border: 1px solid #37474f;
     border-radius: 5px;
     padding: 0.7rem 1rem;
-    font-family: inherit;
-    color: black;
     font-size: 1.5rem;
+    color: black; 
 }
 
-
-
-.content-section form button{
-    position: absolute;
-    right:0;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+.content-section form button {
     padding: 0.91rem 0.7rem;
-    font-family: inherit;
-    font-size: 1.2rem;
-    outline: none;
-    border:none ;
+    border: none;
+    border-radius: 5px; 
     background: #31af86;
-    color:white;
+    color: white;
+    font-size: 1.2rem;
     cursor: pointer;
-
+    margin-left: 10px; 
 }
+
+
 
 .day-info .content{
     display: flex;
@@ -206,55 +199,71 @@ body{
 
 @media (min-width: 600px) {
     .wrapper {
-        grid-template-columns: 3fr 4fr; /* Two columns layout on wider screens */
+        grid-template-columns: 3fr 4fr;
     }
 
     .default-info h2 {
-        font-size: 2.5rem; /* Adjust title size */
+        font-size: 2.5rem; 
     }
 
     .default-info h3 {
-        font-size: 1.2rem; /* Adjust subtitle size */
+        font-size: 1.2rem; 
     }
 
     .weather-temp {
-        font-size: 3rem; /* Adjust temperature size */
+        font-size: 3rem; 
     }
 }
 
 @media (max-width: 599px) {
 
     .app-heading {
-        font-size: 2rem; /* Smaller heading size */
+        font-size: 2rem; 
         margin-top: 50px;
     }
     .default-info h2 {
-        font-size: 2rem; /* Smaller title size */
+        font-size: 2rem; 
     }
 
     .default-info h3 {
-        font-size: 1rem; /* Smaller subtitle size */
+        font-size: 1rem; 
     }
 
     .weather-temp {
-        font-size: 2.5rem; /* Smaller temperature size */
+        font-size: 2.5rem; 
     }
 
     .list-content ul {
-        flex-direction: column; /* Stack list items vertically on small screens */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .list-content ul li {
-        margin-bottom: 1rem; /* Add spacing between items */
+        margin-bottom: 1rem; 
     }
 
     .content-section form input {
-        width: 100%; /* Full width input */
+        width: 100%; 
     }
 
     .content-section form button {
-        width: 100%; /* Full width button */
-        margin-top: 0.5rem; /* Add margin for spacing */
+        width: 100%; 
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media (max-width: 599px) {
+    .content-section form {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .content-section form input {
+        width: 100%;
+    }
+
+    .content-section form button {
+        width: 100%;
     }
 }
