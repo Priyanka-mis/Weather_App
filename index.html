@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1 class="Weather_App">Weather App</h1> -->
+    <div class="Weather_App">
+        <h1 class="app-heading">Weather App</h1> <!-- Ensure the heading is here -->
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="img-section">
+                <div class="default-info">
+                    <h2 class="default-day">Sunday</h2>
+                    <span class="default-date"> 3 February 2025</span>
+                    <div class="icons">
+                        <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="">
+                        <h2 class="Weather-temp">22°C</h2>
+                        <h3 class="cloudtxt">Overcast Clouds</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <form>
+                    <input type="text" placeholder="Search Location" class="input-field"/>
+                    <button type="submit" class="btn-search">Search</button>
+                </form>
+                <div class="day-info">
+                    <div class="content">
+                        <p class="title">Name</p>
+                        <span class="value" id="cityName">United Kingdom</span>
+                    </div>
+                    <div class="content">
+                        <p class="title">Temp</p>
+                        <span class="value" id="temperature">23°C</span>
+                    </div>
+                    <div class="content">
+                        <p class="title">HUMIDITY</p>
+                        <span class="value" id="humidity">2.92 Km/h</span>
+                    </div>
+                </div>
+                <div class="list-content">
+                    <ul>
+                        <li>
+                            <img src="http://openweathermap.org/img/wn/10d@4x.png">
+                            <span>Sat</span>
+                            <span class="day-temp">23°C</span>
+                        </li>
+                        <li>
+                            <img src="http://openweathermap.org/img/wn/10d@4x.png">
+                            <span>Sat</span>
+                            <span class="day-temp">23°C</span>
+                        </li>
+                        <li>
+                            <img src="http://openweathermap.org/img/wn/10d@4x.png">
+                            <span>Sat</span>
+                            <span class="day-temp">23°C</span>
+                        </li>
+                        <li>
+                            <img src="http://openweathermap.org/img/wn/10d@4x.png">
+                            <span>Sat</span>
+                            <span class="day-temp">23°C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
+
+
+
